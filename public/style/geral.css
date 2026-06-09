@@ -1,0 +1,374 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CECECE;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.options{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #CECECE;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.op:hover{
+    background-color: rgba(245, 245, 245, 0.598);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.m30{
+    margin-top: 30px;
+}
+
+.m15{
+    margin-top: 15px;
+
+}
+
+.lft10{
+    margin-left: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CECECE;
+    padding: 15px;
+}
+.boxI{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff00;
+}
+
+.radius24{
+    border-radius: 24px;
+}
+
+.radius16{
+    border-radius: 16px;
+}
+
+.t1{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 90px;
+    font-weight: 200;
+}
+.t2{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 60px;
+    font-weight: 200;
+}
+.t3{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 40px;
+    font-weight: 200;
+}
+.t4{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 20px;
+    font-weight: 200;
+}
+.t5{
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.b{
+    font-weight: bolder;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D47FF;
+    border: 2px solid #5912ff;
+    color: white;
+    font-size: 20px;
+    border-radius: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #7D47FF;
+    transition: 0.4s;
+}
+
+
+.ipt{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    border: 2px solid #CECECE;
+
+    color: #000;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.textarea-minimal {
+  width: 100%;
+  height: 200px;
+  padding: 12px 16px;
+  border: 2px solid #CECECE;
+  background-color: white;
+  color: #1e293b;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+
+.textarea-minimal:focus {
+  outline: none;
+  border: 2px solid black;
+}
+
+.textarea-minimal::placeholder {
+  color: #94a3b8;
+}
+
+
+.textarea-minimal::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 2. Fundo da barra (Track) - Totalmente transparente */
+.textarea-minimal::-webkit-scrollbar-track {
+  background: transparent;
+  cursor: none;
+}
+
+/* 3. Indicador de rolagem (Thumb) - Cinza com 16px de border-radius */
+.textarea-minimal::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Tom de cinza claro e moderno */
+  border-radius: 16px; /* Borda arredondada de 16px */
+  cursor: none;
+}
+
+/* Mudança de cor sutil ao passar o mouse na barra cinza */
+.textarea-minimal::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8; 
+}
+
+
+
+
+
+
+
+
+/* Placeholder */
+.ipt::placeholder{
+    color: #9E9E9E;
+}
+.ipt:focus{
+     border: 2px solid black;
+}
+
+.line{
+    display: inline-block;
+    border-bottom: 0.10em solid;
+    padding-bottom: 0.05%;
+}
+.purple{
+    color: #5912ff;
+}
+
+.red{
+    color: red;
+}
+
+.green{
+    color: green;
+}
+
+
+.bgreen{
+    background-color: rgb(214, 255, 209);
+    border: 2px solid rgb(0, 184, 6);
+}
+
+.bred{
+    background-color: rgb(255, 209, 209);
+    border: 2px solid rgb(184, 0, 0);
+}
+.bpurple{
+    background-color: #5912ff;
+}
+
+.white{
+    color: white;
+}
+.w1{
+    width:100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
+
+    background-color: white;
+
+    -webkit-box-shadow: 0px 13px 26px -6px rgba(0,0,0,0.21); 
+    box-shadow: 0px 13px 26px -6px rgba(0,0,0,0.21);
+
+    transition: transform 0.3s ease;
+}
+
+.header.hide{
+    transform: translateY(-100%);
+}
+
+.header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+
+
+
+main{
+    flex: 1;
+    padding: 40px 100px;
+}
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
+
+    margin-top: auto;
+
+    background-color: white;
+
+    -webkit-box-shadow: 0px -13px 26px -6px rgba(0,0,0,0.21); 
+    box-shadow: 0px -13px 26px -6px rgba(0,0,0,0.21);
+    margin-top: 100px;
+}
+
+
+.d1{
+    display: flex;
+    justify-content: start;
+    
+}
+.d2{
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+}
+
+.popUp{
+    margin-top: 25%;
+    margin-left: 43%;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #CECECE;
+    border-radius: 24px;
+}
+
+.radio-hidden{
+    display:none;
+}
+
+.an{
+    width:100%;
+    cursor:pointer;
+}
+
+.option-card{
+    transition:.2s;
+}
+.option-card:hover{
+    background-color: rgb(244, 244, 244);
+}
+
+.radio-hidden:checked + .option-card{
+    border:2px solid #7c3aed;
+    background:rgba(124,58,237,.1);
+}
+
+.session{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.pur{
+    background-color: #7c3aed4e;
+}
+
+.tran{
+    background-color: #ffffff00;
+}

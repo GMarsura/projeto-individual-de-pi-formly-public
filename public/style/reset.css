@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* BODY */
+body {
+    height: 100dvh;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+a {
+    all: unset;
+    cursor: pointer; /* Restores the hand cursor for better UX */
+}
+
+/* FORMULÁRIOS */
+input,
+textarea,
+select,
+button {
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* BOTÕES */
+button {
+    cursor: pointer;
+}

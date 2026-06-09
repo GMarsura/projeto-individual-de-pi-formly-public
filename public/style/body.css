@@ -1,0 +1,79 @@
+.body{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.l1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #7D47FF;
+    gap:2% ;
+}
+.sp{
+    display: flex;
+    text-align: center;
+    width: 90%;
+}
+.d1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+    
+}
+
+
+.d1 img{
+    height: auto;
+    width: 100px;
+}
+
+.l2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+    
+}
+.fild{
+    gap: 1%;
+}
+label{
+    margin-left: 15px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.l{
+    margin-top: -20px;
+}
+
+.btnPass{
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    border: 2px solid #5912ff;
+}
+.clicked{
+    background-color: #7D47FF;
+}

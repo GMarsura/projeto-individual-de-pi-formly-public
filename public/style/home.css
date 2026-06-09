@@ -1,0 +1,160 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.search{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 80px;
+
+}
+
+.src{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    
+}
+
+
+.iptEntry{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 80px;
+    gap: 15px;
+}
+.cardForms{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:20px;
+}
+
+.cardForm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 290px;
+    height: 360px;
+    border: 4px solid #CECECE;
+    background-color: white;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: 0.4s;
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom:30px;
+    background-color: #F8F8F8;
+    gap:35%;
+    width: 290px;
+    height: 360px;
+    border: 4px solid #CECECE;
+    border-radius: 24px;
+    padding-bottom:30px;
+    transition: 0.4s;
+}
+
+
+.first:hover{
+    background-color: #e8e8e8;
+    transition: 0.4s;
+}
+
+.cardForm:hover{
+    background-color: #f2f2f2;
+    transition: 0.4s !important;
+}
+
+.first img{
+    transform: scale(3.0);
+}
+
+
+
+.pt1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.pt1 img{
+    transform: scale(0.8);
+}
+
+.pt2{
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.pt2 span:nth-child(2){
+    margin-left: 10px;
+    width:90%;
+}
+
+.pt3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+.pt3 img{
+    transform: scale(0.7);
+}
+
+.create{
+    position: absolute;
+    z-index: 98;
+    width: 100dvw;
+    height: 100dvh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.create div{
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    background-color: white;
+    width:70%;
+    border-radius: 24px;
+    border: 2px solid #CECECE;
+    padding:2%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.create div img{
+    width:40px;
+    height: 40px;
+}

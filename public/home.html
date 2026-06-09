@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <script defer src="./scripts/home.js"></script>
+</head>
+<body>
+    <div class="create" >
+        <div>
+                    <img src="../images/icons/close.svg" alt="" onclick="closeCreate()">
+                    <span class="t4 b m30" style="margin-left: 15px;">Criar novo formulario</span>
+                    <label for="" class="t5 b m30" style="margin-left: 15px;">Nome de usuario</label>
+                    <input type="text" placeholder="Nome do formulario" class="ipt radius24" id="iptNameUser">
+                    <label for="" class="t5 b m30" style="margin-left: 15px;">Descrição</label>
+                    <input type="text" placeholder="Descrição do formulario" class="ipt radius24" id="iptDescriptionUser">
+                    <button class="btn m30" onclick="handleCreateForm(iptNameUser,iptDescriptionUser)">Criar Formulario</button>
+                    <span class="t5 red b" style="margin-left: 15px;" id="msgErrorC"></span>
+
+        </div>
+    </div>
+    <header class="header">
+        <div class="d1">
+            <span class="t4 b" onclick="window.location = 'home.html'">Formly</span>
+        </div>
+        <div class="d2">
+            <span class="t5" id="nameUser">Gabriel ortiz dos anjos marsura</span>
+            <span class="t5 b red" onclick="logout()">Sair</span>
+        </div>
+    </header>
+
+
+    <div class="content">
+
+
+        <div class="search">
+
+            <div class="src">
+            <label class="t4 b  ">Participar de nova pesquisa</label>
+            <div class="iptEntry">
+                <input type="text" placeholder="Codigo de acesso" class="ipt radius24" id="iptCode" style="text-transform: uppercase;">
+                <button class="btn" onclick="goToReply(iptCode.value)">Ingressar</button>
+            </div>
+            </div>
+        </div>
+        
+
+        <div class="grid">
+            <span class="t4 b">Seus Formularios</span>
+            <div class="cardForms">
+                
+            </div>
+        </div>
+
+    </div>
+
+   <footer class="footer">©Todos os direitos reservados</footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/body.css">
+    <script defer src="./scripts/signup.js"></script>
+</head>
+<body class="body">
+    <div class="l2">
+        <div class="container">
+            <span class="t3 b purple">Entrar</span>
+
+            <div class="form" style="display: flex; flex-direction: column; width: 100%;">
+
+                <div class="fild" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Nome</label>
+                    <input type="text" placeholder="Nome" class="ipt radius24" id="iptName">
+                    <span class="t5 red b" style="margin-left: 15px;margin-top: -2px" id="msgErrorName"></span>
+                </div>
+                 <div class="fild" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Nome de usuario</label>
+                    <input type="text" placeholder="Nome de usuario" class="ipt radius24" id="iptUserName">
+                    <span class="t5 red b" style="margin-left: 15px;margin-top: -2px" id="msgErrorUsername"></span>
+                </div>
+
+                <div class="fild" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Senha</label>
+                    <input type="password" placeholder="Senha" class="ipt radius24" id="iptPassword">
+                    <span class="t5 red b" style="margin-left: 15px;margin-top: -2px" id="msgErrorPassword"></span>
+                    <div class="viewPass" style="display: flex; flex-direction: row;justify-content: end;align-items: center; padding-right: 15px; gap:1%;margin-top: 5px; ">
+                        <span class="t5 b">Ver senha</span>
+                        <button class="btnPass" onclick="showPass(iptPassword,btnPass1)" id="btnPass1"></button>
+                    </div>
+                </div>
+                <div class="fild l" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Repetir senha</label>
+                    <input type="password" placeholder="Repetir senha" class="ipt radius24" id="iptPassword2">
+                <span class="t5 red b" style="margin-left: 15px;margin-top: -2px" id="msgErrorPassword2"></span>
+                    
+                    <div class="viewPass" style="display: flex; flex-direction: row;justify-content: end;align-items: center; padding-right: 15px; gap:1%;margin-top: 5px; ">
+                        <span class="t5 b">Ver senha</span>
+                        <button class="btnPass" onclick="showPass(iptPassword2,btnPass2)" id="btnPass2"></button>
+                    </div>
+                </div>
+                <button class="btn b" onclick="handleSignup()">Registrar</button>
+                <span class="t5 red b" style="margin-left: 15px;margin-top: -6px" id="msgError"></span>
+                <a href="./login.html" style="margin-top: -12px;margin-left: 15px;">
+                  <span class="t5 b" ">Já possui uma conta? <span class="t5 purple line b">Entre já!</span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="l1">
+        <div class="d1">
+            <img src="./images/logo.png" alt="Logo">
+            <span class="t2 b white">Formly</span>
+        </div>
+        <span class="t3 b white sp">
+            Crie Formularios de forma facil e rapida, com analize de respostas e dashboards inteligentes
+        </span>
+    </div>
+    
+</body>
+</html>

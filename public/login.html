@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/body.css">
+    <script defer src="./scripts/login.js"></script>
+</head>
+<body class="body">
+    
+
+    <div class="l1">
+        <div class="d1">
+            <img src="./images/logo.png" alt="Logo">
+            <span class="t2 b white">Formly</span>
+        </div>
+        <span class="t3 b white sp">
+            Crie Formularios de forma facil e rapida, com analize de respostas e dashboards inteligentes
+        </span>
+    </div>
+    <div class="l2">
+        <div class="container" >
+            
+            <span class="t3 b purple">Entrar</span>
+
+            <div class="form" style="display: flex; flex-direction: column; width: 100%;">
+
+                <div class="fild" id="name" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Nome de usuario</label>
+                    <input type="text" placeholder="Nome de usuario" class="ipt radius24" id="iptUserName">
+                </div>
+
+                <div class="fild" id="password" style="display: flex; flex-direction: column;">
+                    <label for="" class="t4 b">Senha</label>
+                    <input type="password" placeholder="Senha" class="ipt radius24" id="iptPassword">
+                    <div class="viewPass" style="display: flex; flex-direction: row;justify-content: end;align-items: center; padding-right: 15px; gap:1%;margin-top: 5px; ">
+                        <span class="t5 b">Ver senha</span>
+                        <button class="btnPass" onclick="showPass(iptPassword,btn1)" id="btn1"></button>
+                    </div>
+                </div>
+                <button class="btn b" onclick="handleLogin()">Entrar</button>
+                <span class="t5 red b" style="margin-left: 15px;margin-top: -6px" id="msgError"></span>
+                 <a href="./signup.html" style="margin-top: -6px;margin-left: 15px;">
+                  <span class="t5 b" ">Não possui uma conta? <span class="t5 purple line b">Cadastre-se já!</span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
